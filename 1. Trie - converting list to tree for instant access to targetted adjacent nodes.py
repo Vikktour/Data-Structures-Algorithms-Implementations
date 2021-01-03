@@ -18,6 +18,7 @@ Ex: let's say we check board[0][0], and found 20/100 words that match on the fir
 (we didn't even look at the other 80 words due to properties of hashmap).
 
 What is a Trie?
+Diagram: https://drive.google.com/file/d/1McwXQIHmsk4sDwoYVNk0MhZFTMaDvnbg/view?usp=sharing
 It is a tree where each node stores a dictionary of next possible letters of a word sequence.
 This makes it so we can quickly prune and ignore the letters that don't match.
 
