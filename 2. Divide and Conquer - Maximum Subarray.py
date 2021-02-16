@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=u7YMFRUFqe0&ab_channel=AlgorithmsMadeEasy
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
 		
-		#divide and conquer recursive function
+	#divide and conquer recursive function
         def daq(left,right) -> int:
             if left == right:
                 return nums[left]
@@ -25,10 +25,10 @@ class Solution:
             leftMax = daq(left,middle)
             rightMax = daq(middle+1,right)
             crossMax = crossmax(left,right,middle)
-			#join
+	    #join
             return max(leftMax,rightMax,crossMax)
 		
-		#gets the max sum that includes both the left and right half (note that leftmax or rightmax can be bigger)
+	#gets the max sum that includes both the left and right half (note that leftmax or rightmax can be bigger)
         def crossmax(left,right,middle) -> int:
             #start from middle and calculate cumulative sum leftwards to find maxleftsum and same for right.
 
